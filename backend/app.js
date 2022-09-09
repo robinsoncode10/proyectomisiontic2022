@@ -22,7 +22,7 @@ var admin_route = require('./routes/admin');
 // Hacemos uso de la variable mongoose con su metodo connect, recibe una ruta de conexión con el puerto por defecto de la base de datos de mongodb continuando
 // con el nombre de la base de datos luego creamos una funcion error (err) y respuesta (res) con un condicional, si tenemos un error o si tenemos una conexión exitosa nos mostrará
 // por medio de la consola.
-mongoose.connect('mongodb://127.0.0.1:27017/proyectomisiontic2022',{useUnifiedTopology: true, useNewUrlParser: true}, (err, res)=>{
+mongoose.connect('mongodb+srv://robinsoncode10:unodos3@cluster0.zptmne2.mongodb.net',{useUnifiedTopology: true, useNewUrlParser: true}, (err, res)=>{
     if (err){
         console.log(err);
     }else{
